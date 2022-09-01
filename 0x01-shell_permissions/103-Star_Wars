@@ -1,2 +1,2 @@
 #!/bin/bash
-open StarWars IV episode
+telnet towel.blinkenlights.nl
