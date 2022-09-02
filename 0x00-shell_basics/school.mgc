@@ -1,2 +1,2 @@
 #!/bin/bash
-ls | grep -r "SCHOOL"
+ls -r "SCHOOL"
