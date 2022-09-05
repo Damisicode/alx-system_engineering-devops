@@ -1,0 +1,1 @@
+"This are my exercises for shell redirections"
