@@ -1,2 +1,2 @@
 #!/bin/bash
-find /etc/ssh/sshd_config type f -name
+cat /etc/ssh/sshd_config | grep [a-z]*
