@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(((($WATER) + (($STIR))))
+printf "%c%c" $WATER $STIR
