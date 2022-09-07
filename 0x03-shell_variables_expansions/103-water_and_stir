@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%c%c" $WATER $STIR
+printf "%c%c" $WATER , $STIR
