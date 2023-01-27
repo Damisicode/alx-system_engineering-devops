@@ -18,21 +18,28 @@ int main(void)
 		if (fork() == 0)
 		{
 			printf("Zombie process created, PID: %d\n", getpid());
-			return 0;
+			return (0);
 		}
 		else
 		{
 			sleep(1);
+			return (0);
 		}
 	}
 	infinite_while();
+	return (0);
 }
+
+/**
+ * infinite_while - infinite while loop
+ * Return: Always 0
+ */
 
 int infinite_while(void)
 {
-    while (1)
-    {
-        sleep(1);
-    }
-    return (0);
+	while (1)
+	{
+		sleep(1);
+	}
+	return (0);
 }
