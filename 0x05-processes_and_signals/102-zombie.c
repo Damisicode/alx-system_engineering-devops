@@ -23,7 +23,7 @@ int main(void)
 		else
 		{
 			sleep(1);
-			return (0);
+			exit(0);
 		}
 	}
 	infinite_while();
