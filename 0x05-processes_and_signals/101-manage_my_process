@@ -5,12 +5,12 @@
 
 start_p() {
     ./manage_my_process &
-    echo $$ > /var/run/my_process.pid
+    sudo echo $$ > /var/run/my_process.pid
 }
 
 stop_p() {
-    rm /var/run/my_process.pid
-    pkill -of manage_my_process
+    sudo rm /var/run/my_process.pid
+    sudo pkill -of manage_my_process
 }
 
 has_arg_1() {
@@ -31,5 +31,5 @@ if [ $# -gt 0 ]; then
     CMD="$1"
     has_arg_1
 else
-    echo "Usage: manage_your_process {start|stop|restart}"
+    echo "Usage: manage_my_process {start|stop|restart}"
 fi
