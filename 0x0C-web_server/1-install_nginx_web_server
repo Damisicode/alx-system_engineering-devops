@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script installs nginx on a server
+apt-get -y install nginx
+service nginx start
+echo "Hello World!" | tee /usr/share/nginx/html/index.html

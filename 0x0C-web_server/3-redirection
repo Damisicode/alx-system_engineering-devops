@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This script installs an nginx server with redirection
+apt-get -y install nginx
+service nginx start
+sed -i '37i\rewrite ^/redirect_me http://dev-enoch.tech permanent;' etc/nginx/sites_available/default
+service nginx restart
