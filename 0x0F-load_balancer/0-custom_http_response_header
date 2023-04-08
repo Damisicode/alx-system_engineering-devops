@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This bash script adds custom header X-Served-By to the HTTP header
+# response
+sudo apt-get update
+sudo apt-get -y install nginx
+sed -i 's/http {/http {\n\tadd_header X-Served-By $HOSTNAME/' /etc/nginx/nginx.conf
+sudo service nginx start
