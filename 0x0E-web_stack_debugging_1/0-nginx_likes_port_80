@@ -2,3 +2,4 @@
 # This bash script changes the listening port to 80
 sudo sed -i 's/8080/80/' /etc/nginx/sites-available/default
 sudo service nginx start
+
