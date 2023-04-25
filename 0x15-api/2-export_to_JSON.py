@@ -16,7 +16,8 @@ from sys import argv
 
 if __name__ == "__main__":
     usr_id = argv[1]
-    username = requests.get("http://jsonplaceholder.typicode.com/users/{}".format(usr_id)).json().get("username")
+    username = requests.get("http://jsonplaceholder.typicode.com/users/{}"
+                            .format(usr_id)).json().get("username")
     all_tasks = []
     r = requests.get("http://jsonplaceholder.typicode.com/todos").json()
 
