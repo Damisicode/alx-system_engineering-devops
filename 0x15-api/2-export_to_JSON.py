@@ -2,7 +2,12 @@
 """
 Extend the python script from exercise 0 to export data in JSON format.
 Record all tasks that owned by the employee.
-Format must be: { "USER_ID": [{"task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS, "username": "USERNAME"}, {"task": "TASK_TITLE", "completed": "TASK_COMPLETED_STATUS", "username": "USERNAME"}, ... ]}
+Format must be: { "USER_ID": [{"task": "TASK_TITLE",
+                "completed": TASK_COMPLETED_STATUS,
+                "username": "USERNAME"},
+                {"task": "TASK_TITLE",
+                "completed": "TASK_COMPLETED_STATUS",
+                "username": "USERNAME"}, ... ]}
 File name must be: USER_ID.json
 """
 import json
