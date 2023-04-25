@@ -2,11 +2,23 @@
 """
 Extend the python script from exercise 0 to export data in JSON format.
 Record all tasks that owned by the employees.
-Format must be: { "USER_ID": [{"task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS, "username": "USERNAME"}, {"task": "TASK_TITLE", "completed": "TASK_COMPLETED_STATUS", "username": "USERNAME"}, ... ], "USER_ID": [{"username": "USERNAME", "task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS", "username": "USERNAME"}, {"task": "TASK_TITLE", "completed": "TASK_COMPLETED_STATUS", "username": "USERNAME"}, ...]}
+Format must be: { "USER_ID": [{"task": "TASK_TITLE",
+                "completed": TASK_COMPLETED_STATUS,
+                "username": "USERNAME"},
+                {"task": "TASK_TITLE",
+                "completed": "TASK_COMPLETED_STATUS",
+                "username": "USERNAME"}, ... ],
+                "USER_ID": [{"username": "USERNAME",
+                "task": "TASK_TITLE",
+                "completed": TASK_COMPLETED_STATUS",
+                "username": "USERNAME"},
+                {"task": "TASK_TITLE",
+                "completed": "TASK_COMPLETED_STATUS",
+                "username": "USERNAME"}, ...]}
 File name must be: todo_all_employees.json
 """
-import requests
 import json
+import requests
 
 if __name__ == "__main__":
     users = requests.get("http://jsonplaceholder.typicode.com/users").json()
