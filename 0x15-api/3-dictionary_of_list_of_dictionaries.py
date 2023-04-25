@@ -6,7 +6,7 @@ Format must be: { "USER_ID": [{"task": "TASK_TITLE", "completed": TASK_COMPLETED
 File name must be: todo_all_employees.json
 """
 import requests
-from sys import argv
+import json
 
 if __name__ == "__main__":
     users = requests.get("http://jsonplaceholder.typicode.com/users").json()
