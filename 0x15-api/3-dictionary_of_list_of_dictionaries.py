@@ -33,9 +33,9 @@ if __name__ == "__main__":
         for task in tasks:
             if (task.get("userId") == int(usr_id) and task.get("completed")):
                 temp = {}
+                temp["username"] = username
                 temp["task"] = task.get("title")
                 temp["completed"] = task.get("completed")
-                temp["username"] = username
                 all_tasks.append(temp)
         store[usr_id] = all_tasks
 
