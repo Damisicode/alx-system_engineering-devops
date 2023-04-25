@@ -10,7 +10,8 @@ from sys import argv
 
 if __name__ == "__main__":
     usr_id = argv[1]
-    name = requests.get("http://jsonplaceholder.typicode.com/users/{}".format(usr_id)).json().get("name")
+    name = requests.get("http://jsonplaceholder.typicode.com/users/{}"
+            .format(usr_id)).json().get("name")
     total_tasks = 0
     done_tasks = []
     r = requests.get("http://jsonplaceholder.typicode.com/todos").json()
@@ -21,7 +22,8 @@ if __name__ == "__main__":
             if (task.get("completed")):
                 done_tasks.append(task.get("title"))
 
-    print("Employee {} is done with tasks({:d}/{:d}):".format(name, len(done_tasks), total_tasks))
+    print("Employee {} is done with tasks({:d}/{:d}):"
+            .format(name, len(done_tasks), total_tasks))
 
     for item in done_tasks:
         print("\t {}".format(item))
