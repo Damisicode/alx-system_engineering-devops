@@ -31,7 +31,7 @@ if __name__ == "__main__":
         all_tasks = []
 
         for task in tasks:
-            if (task.get("userId") == int(usr_id) and task.get("completed")):
+            if (task.get("userId") == int(usr_id)):
                 temp = {}
                 temp["username"] = username
                 temp["task"] = task.get("title")
