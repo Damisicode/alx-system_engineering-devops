@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-# this script install nginx server with redirection and page not found 404
-# error
-apt-get install nginx
-service nginx start
-echo "Ceci n'est pas une page" | tee /usr/share/nginx/html/error_404.html
-sed -i '38i\error_page 404 /error_404.html;' /etc/nginx/sites-available/default
-service nginx restart
