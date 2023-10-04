@@ -1,7 +1,0 @@
-Host *
-    PasswordAuthentication no
-    IdentityFile ~/.ssh/holberton
-    SendEnv LANG LC_*
-    HashKnownHosts yes
-    GSSAPIAuthentication yes
-    GSSAPIDelegateCredentials no
